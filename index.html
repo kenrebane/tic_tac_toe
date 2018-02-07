@@ -1,10 +1,87 @@
 <!DOCTYPE html>
   <head>
-    <title></title>
+    <title>Tic Tac Toe</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
 
+    <header>
+      <div id="won-one">
+        <p>
+          <span id="player-name">Player1</span> :
+          <span id="p1-score">0</span>
+        </p>
+      </div>
+      <h1>Tic tac toe</h1>
+      <div id="won-two">
+        <p>
+          <span id="player-name">Player2</span> :
+          <span id="p1-score">0</span>
+        </p>
+      </div>
+    </header>
+
+    <section id="score">
+      <p>Winner! <span id="winner-name">Player1</span></p>
+    </section>
+
+    <section id="game">
+      <div id="tictac">
+        <ul id="ul">
+          <li id="spot1">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot2">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot3">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot4">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot5">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot6">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot7">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot8">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+          <li id="spot9">
+            <p class="hidden O">O</p>
+            <p class="hidden X">X</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <button id="reset">Reset</button>
+    </footer>
+
+    <div id="game-enter">
+      <form id="get-names">
+        <p>Name of player 1</p>
+        <input type="text" name="player-name-one" id="player-name-one">
+        <p>Name of player 2</p>
+        <input type="text" name="player-name-two" id="player-name-two">
+
+      </form>
+      <button type="submit">Start game</button>
+    </div>
     <script src="jquery.js"></script>
     <script src="functions.js"></script>
   </body>

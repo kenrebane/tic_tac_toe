@@ -1,1 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color:  #28b5d4;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  margin: 0 30px;
+  padding: 20px;
+  background-color: #168098;
+  border: 1px solid  #0b5161;
+  box-shadow: 0 0 10px 0  #08424f;
+  color: white;
+}
+
+header div p, span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header h1 {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+#score {
+  background-color:  #28cd2b;
+  margin: 10px auto;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#score > p {
+  display: block;
+  font-size: 24px;
+  margin: 2px;
+  padding-top: 10px;
+}
+
+#score > p > span {
+  display: block;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+
+#game {
+  width: 60%;
+  height: 60%;
+  background-color:  #168098;
+  margin: 0 auto;
+  border: 1px solid  #0b5161;
+  box-shadow: 0 0 10px 0  #08424f;
+}
+
+#tictac {
+  width: 100%;
+  height: 100%;
+}
+
+#ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row  wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section > div > ul > li {
+  list-style: none;
+  width: 33.3%;
+  height: 33.3%;
+  display: flex;
+  flex-flow: row  wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.O, .X {
+  font-size: 10em;
+  font-weight: bold;
+}
+
+.X {
+  color: red;
+}
+
+.O {
+  color: green;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer button {
+  padding: 10px;
+  background-color: #168098;
+  border: 1px solid #0b5161;
+  box-shadow: 0 0 10px 0  #08424f;
+}
+
+/*Position with jQuery*/
+#game-enter {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  background-color: #168098;
+  border: 1px solid  #0b5161;
+  box-shadow: 0 0 10px 0  #08424f;
+  width: 30vw;
+  height: 15vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#get-names > p {
+  margin: 5px;
+  text-align: center;
+}
+
+#game-enter > button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #168098;
+  border: 1px solid #0b5161;
+  box-shadow: 0 0 10px 0  #08424f;
+}

@@ -44,10 +44,12 @@ header h1 {
 
 #score {
   background-color:  #28cd2b;
-  margin: 10px auto;
+  margin: 0 auto;
   width: 50%;
+  height: 55px;
   border-radius: 10px;
   text-align: center;
+  display: none;
 }
 
 #score > p {
@@ -70,8 +72,10 @@ header h1 {
   width: 60%;
   height: 60%;
   background-color:  #168098;
-  margin: 0 auto;
+  margin: 0px auto;
+  margin-top: 6%;
   border: 1px solid  #0b5161;
+  border-radius: 5px;
   box-shadow: 0 0 10px 0  #08424f;
 }
 
@@ -91,16 +95,21 @@ header h1 {
 
 section > div > ul > li {
   list-style: none;
-  width: 33.3%;
-  height: 33.3%;
+
+  width: 29%;
+  height: 29%;
   display: flex;
   flex-flow: row  wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
 }
 
 .O, .X {
-  font-size: 10em;
+  font-size: 9.5em;
   font-weight: bold;
 }
 
@@ -131,14 +140,13 @@ footer button {
 /*Position with jQuery*/
 #game-enter {
   position: absolute;
-  top: 200px;
-  left: 500px;
   background-color: #168098;
   border: 1px solid  #0b5161;
+  border-radius: 5px;
   box-shadow: 0 0 10px 0  #08424f;
-  width: 30vw;
-  height: 15vw;
-  display: flex;
+  width: 40%;
+  height: 30%;
+  display: none;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
@@ -149,10 +157,27 @@ footer button {
   text-align: center;
 }
 
-#game-enter > button {
+#get-names > button {
   margin: 10px;
   padding: 10px;
   background-color: #168098;
   border: 1px solid #0b5161;
+  border-radius: 5px;
   box-shadow: 0 0 10px 0  #08424f;
+}
+
+#get-names > button:hover {
+  background-color: #8B008B;
+}
+
+#get-names {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  border-radius: 5px;
+  background-color: #8B008B;
 }

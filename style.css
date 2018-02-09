@@ -10,7 +10,7 @@ html, body {
 }
 body {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -47,7 +47,7 @@ header > h1, #game-enter > h1 {
 }
 
 .noti {
-  visibility: hidden;
+  visibility: visible;
 }
 
 #board {
@@ -108,7 +108,7 @@ header, #notifications, #board, footer, header > div > p {
 }
 
 #game-enter {
-  visibility: hidden;
+  visibility: visible;
   position: absolute;
   border: 1px solid #eee;
   padding: 20px;
@@ -141,4 +141,95 @@ header, #notifications, #board, footer, header > div > p {
 
 #start-game:hover {
   background: #e9e9e9;
+}
+
+@media (max-height: 650px) {
+  #board {
+    width: 306px;
+  }
+  .container {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-height: 510px) {
+  header {
+    margin-bottom: 0px;
+  }
+
+}
+
+@media (max-height: 480px) {
+  #board {
+    width: 231px;
+  }
+  .container {
+    height: 75px;
+    width: 75px;
+    font-size: 50px;
+  }
+
+  header > h1 {
+    font-size: 16px;
+  }
+  header > div > p {
+    font-size: 10px;
+  }
+  #player-one, #player-two {
+    margin-top: 5px;
+  }
+  .noti {
+    font-size: 10px;
+  }
+  #notifications {
+    height: 20px;
+  }
+
+  #reset {
+    padding: 4px;
+  }
+
+
+
+}
+@media (max-height: 310px) {
+  header > h1 {
+    font-size: 16px;
+  }
+  header > div > p {
+    font-size: 10px;
+  }
+  #player-one, #player-two {
+    margin-top: 5px;
+  }
+  .noti {
+    font-size: 10px;
+  }
+  #notifications {
+    height: 20px;
+  }
+
+  #board {
+    width: 156px;
+  }
+  .container {
+    width: 50px;
+    height: 50px;
+  }
+  #reset {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+
+  #player-one {
+    margin-left: 10px;
+  }
+  #player-two {
+    margin-right: 10px;
+  }
 }

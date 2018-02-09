@@ -1,86 +1,28 @@
 <!DOCTYPE html>
   <head>
-    <title>Tic Tac Toe</title>
+    <title></title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-
-    <header>
-      <div id="won-one">
-        <p>
-          <span id="player-one-name"></span> :
-          <span id="p1-score"></span>
-        </p>
-      </div>
-      <h1>Tic tac toe</h1>
-      <div id="won-two">
-        <p>
-          <span id="player-two-name"></span> :
-          <span id="p2-score"></span>
-        </p>
-      </div>
-    </header>
-
-    <section id="score">
-
-    </section>
-
-    <section id="game">
-      <div id="tictac">
-        <ul id="ul">
-          <li id="spot1" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot2" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot3" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot4" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot5" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot6" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot7" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot8" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-          <li id="spot9" class="spot">
-            <p class="hidden O">O</p>
-            <p class="hidden X">X</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <footer>
-      <button id="reset">New game</button>
-    </footer>
-
-    <div id="game-enter">
-      <form id="get-names" name="names">
-        <p>Name of player 1</p>
-        <input type="text" name="player-name-one" id="player-name-one">
-        <p>Name of player 2</p>
-        <input type="text" name="player-name-two" id="player-name-two">
-        <button id="submit"type="submit">Start game</button>
-      </form>
-
+    <div id="container">
+      <header>
+        <h1>Tic tac toe game</h1>
+      </header>
+      <ul id="board">
+        <li id="spot1">+</li>
+        <li id="spot2">+</li>
+        <li id="spot3">+</li>
+        <li id="spot4">+</li>
+        <li id="spot5">+</li>
+        <li id="spot6">+</li>
+        <li id="spot7">+</li>
+        <li id="spot8">+</li>
+        <li id="spot9">+</li>
+      </ul>
+      <div class="clearfix"></div>
+      <footer>
+        <button id="reset">Reset game</button>
+      </footer>
     </div>
     <script src="jquery.js"></script>
     <script src="functions.js"></script>

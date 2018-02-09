@@ -2,28 +2,67 @@
   <head>
     <title></title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <header>
-        <h1>Tic tac toe game</h1>
-      </header>
-      <ul id="board">
-        <li id="spot1">+</li>
-        <li id="spot2">+</li>
-        <li id="spot3">+</li>
-        <li id="spot4">+</li>
-        <li id="spot5">+</li>
-        <li id="spot6">+</li>
-        <li id="spot7">+</li>
-        <li id="spot8">+</li>
-        <li id="spot9">+</li>
-      </ul>
-      <div class="clearfix"></div>
-      <footer>
-        <button id="reset">Reset game</button>
-      </footer>
+    <header>
+      <div id="player-one">
+        <p class="name" id="player-one-name"></p>
+        <p id="player-one-score"></p>
+      </div>
+      <h1>TICTACTOE</h1>
+      <div id="player-two">
+        <p class="name" id="player-two-name"></p>
+        <p id="player-two-score"></p>
+      </div>
+    </header>
+    <div id="notifications">
+
     </div>
+    <div id="board">
+      <div id="spot1" class="container">
+
+      </div>
+      <div id="spot2" class="container">
+
+      </div>
+      <div id="spot3" class="container">
+
+      </div>
+      <div id="spot4" class="container">
+
+      </div>
+      <div id="spot5" class="container">
+
+      </div>
+      <div id="spot6" class="container">
+
+      </div>
+      <div id="spot7" class="container">
+
+      </div>
+      <div id="spot8" class="container">
+
+      </div>
+      <div id="spot9" class="container">
+
+      </div>
+    </div>
+    <footer>
+      <button id="reset">new game</button>
+    </footer>
+
+    <div id="game-enter">
+      <h1>TICTACTOE</h1>
+      <form id="getnames" name="names">
+        <p>PLAYER ONE</p>
+        <input type="text" name="player-one" id="form-name-one"/>
+        <p>PLAYER TWO</p>
+        <input type="text" name="player-two" id="form-name-two"/>
+        <button id="start-game" type="submit">start game</button>
+      </form>
+    </div>
+
     <script src="jquery.js"></script>
     <script src="functions.js"></script>
   </body>
